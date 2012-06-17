@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/example
+END
+color.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/example/color.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/example/main.c
+END
+play.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/example/play.xpm
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/example/main.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/example/Makefile
+END

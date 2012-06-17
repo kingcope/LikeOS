@@ -1,0 +1,15 @@
+default=0
+timeout=60
+color black/yellow yellow/blue
+
+#
+#
+#
+#
+#
+
+
+title LikeOS
+root (hd0,0)
+kernel /kernel.bin
+vbeset 0x141

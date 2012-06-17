@@ -1,0 +1,10 @@
+
+This file contains a list of all the operating systems that this library can support:
+
+spoon - the spoon operating system
+empty - A purely, empty OS. Useful if you just want the standard functions: strcpy, etc.
+
+
+
+That's it. It's quite an exhaustive list.  Add your OS to this list and help improve the library.
+

@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src
+END
+dialog.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/dialog.c
+END
+progress.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/progress.c
+END
+object.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/object.c
+END
+button.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/button.c
+END
+font.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/font.h
+END
+general.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/general.c
+END
+screen.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/screen.c
+END
+image.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/image.c
+END
+browser.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/browser.c
+END
+window_draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/window_draw.c
+END
+text.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/text.c
+END
+listbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/listbox.c
+END
+number.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/number.c
+END
+choice.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/choice.c
+END
+info.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/info.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/Makefile
+END
+font2.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/font2.h
+END
+bigfont.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/bigfont.h
+END
+window_thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/window_thread.c
+END
+xlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/xlib.c
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/input.c
+END
+filedialog.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/filedialog.c
+END
+local.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/local.h
+END
+pulldown.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/pulldown.c
+END
+README.local
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/README.local
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/window.c
+END
+check.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/check.c
+END
+slider.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/slider.c
+END
+svgalib.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/svgalib.c
+END
+mouse.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/mouse.c
+END
+mouse.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/multitrack/!svn/ver/3/svgagui/trunk/src/mouse.h
+END

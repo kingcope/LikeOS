@@ -1,0 +1,68 @@
+
+
+This library attempts to conform to The Open Group's "The Single UNIX Specification, Version 2"
+
+http://www.opengroup.org/onlinepubs/007908799/
+
+
+I've implemented the library as portably as possibly. All OS specific 
+code can be found under the ./os/ directory and in a subdirectory of 
+the appropriate name. Please run "make" for a list of all the 
+supported systems.
+
+QUICK START TO RUNNING libUNIX ON YOUR OS
+-----------------------------------------
+
+1. Copy the directory ./os/empty and give it your OS's name. For
+   example:
+
+         cp -rf ./os/empty ./os/MyOS
+
+2. Read the file ./os/os.h for descriptions of each OS stub
+   and what they should do.
+
+3. Edit the file ./os/MyOS/empty.c and start implementing the
+   the stubs. You can rename empty.c or split the stubs into 
+   their own, unique files. All .c files will be compiled during 
+   make.
+
+4. The Makefile should automatically support your new OS 
+   directory. You should be able to run "make MyOS" to compile
+   the library.
+
+5. If you have unusual compilation requirements, you will need
+   to modify the Makefile and manually add them.
+
+
+USEFUL NOTES:
+-------------
+
+1. There is a dummy platform called empty which implements all the
+   OS stubs as NOTIMPLEMENTED. You can compile an empty libUNIX
+   and then use the library for the generic functions such as
+   memcpy, strcpy, atoi, snprintf, etc.
+
+2. The support for setjmp and longjmp are built into the main part
+   of the libUNIX library. However, I've only defined an x86 compatible
+   version of both. The library, by default, compiles for x86 by
+   defining __x86__ on the compilation command.
+  
+   If you want to add support for another architecture, please
+   edit setjmp.c and add in your specific code within a new
+   define. Then make sure your compilation command in the Makefile
+   defines your define and not the __x86__ one.
+
+
+
+
+Durand
+clutter@djm.co.za
+
+
+
+
+
+
+
+
+

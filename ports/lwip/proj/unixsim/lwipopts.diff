@@ -1,0 +1,67 @@
+--- lwipopts-paulos.h	Thu Jun 20 11:27:07 2002
++++ lwipopts2.h	Thu Jun 20 11:30:35 2002
+@@ -1,29 +1,49 @@
+ #ifndef __LWIPOPTS_H__
+ #define __LWIPOPTS_H__
+-
+-#define MEM_ALIGNMENT           4
+-#undef MEMP_NUM_SYS_TIMEOUT
++#define MEM_ALIGNMENT           1
++#define MEM_SIZE                1600
++#define MEMP_NUM_PBUF           16
++#define MEMP_NUM_UDP_PCB        4
++#define MEMP_NUM_TCP_PCB        5
++#define MEMP_NUM_TCP_PCB_LISTEN 8
++#define MEMP_NUM_TCP_SEG        16
++#define MEMP_NUM_SYS_TIMEOUT    3
++#define MEMP_NUM_NETBUF         2
++#define MEMP_NUM_NETCONN        4
++#define MEMP_NUM_API_MSG        8
++#define MEMP_NUM_TCPIP_MSG      8
++#define MEM_RECLAIM             1
++#define MEMP_RECLAIM            1
++#define PBUF_POOL_SIZE          6
++#define PBUF_POOL_BUFSIZE       128
+ #define PBUF_LINK_HLEN          16
+ #define LWIP_TCP                1
+ #define TCP_TTL                 255
+ #define TCP_QUEUE_OOSEQ         1
+-#ifndef TCP_MSS
+-#define TCP_MSS                 1408
+-#endif
+-#define TCP_SND_BUF             2816
+-#define TCP_SND_QUEUELEN        128
+-#define TCP_WND                 2816
++#define TCP_MSS                 128
++#define TCP_SND_BUF             256
++#define TCP_SND_QUEUELEN        4 * TCP_SND_BUF/TCP_MSS
++#define TCP_WND                 1024
+ #define TCP_MAXRTX              12
+ #define TCP_SYNMAXRTX           4
+-#define ARP_TABLE_SIZE		100
++#define ARP_TABLE_SIZE 10
+ #define IP_FORWARD              1
+ #define IP_OPTIONS              1
+-#define ICMP_TTL                64
++#define ICMP_TTL                255
+ #define LWIP_DHCP               0
+ #define DHCP_DOES_ARP_CHECK     1
+ #define LWIP_UDP                1
+-#define UDP_TTL                 64
+-#undef STATS
+-
++#define UDP_TTL                 255
++#define STATS
++#ifdef STATS
++#define LINK_STATS
++#define IP_STATS
++#define ICMP_STATS
++#define UDP_STATS
++#define TCP_STATS
++#define MEM_STATS
++#define MEMP_STATS
++#define PBUF_STATS
++#define SYS_STATS
++#endif /* STATS */
+ #endif /* __LWIPOPTS_H__ */
+-
