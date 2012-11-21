@@ -172,7 +172,6 @@ gen_t sequencer_powmod (struct sequencer *s, gen_t u)
     return powmod ((gen_t) s->g, u, s->prime);
 }
 
-
 /* Tests follow */
 #ifdef STANDALONE
 #if 1

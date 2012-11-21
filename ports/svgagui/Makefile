@@ -6,7 +6,7 @@ INCDIR = -I..
 LIBS = -lsvgagui -lX11 -lunix
 
 # Compilation:
-CFLAGS = -D_USE_VGALIB -DUSE_VGALIB -Wall -O3 -fomit-frame-pointer $(INCDIR) -nostdlib -nodefaultlibs -nostdinc -fno-builtin -static -ffreestanding -fno-exceptions -Wall -I../include -Ic:/LikeNew/Like/src/src/include/ -Ic:/LikeNew/Like/src/src/include/c++/ -Ic:/LikeNew/Like/src/src/lib/unix/include/unix/ -Wl,-Lc:/LikeNew/Like/src/src/lib/  -Ic:/LikeNew/Like/src/src/lib/unix/include/unix/ -Ic:/LikeNew/Like/src/src/apps -Ic:/LikeNew/Like/src/src/. -Ic:/LikeNew/Like/src/src/ports/mpeg2dec/include
+CFLAGS = -D_USE_VGALIB -DUSE_VGALIB -Wall -O3 -fomit-frame-pointer $(INCDIR) -nostdlib -nodefaultlibs -nostdinc -fno-builtin -static -ffreestanding -fno-exceptions -Wall -I../include -I../../../include/ -I../../../include/c++/ -I../../../lib/unix/include/unix/ -Wl,-L../../../lib/  -I../../../lib/unix/include/unix/ -I../../../apps -I../../../. -I../../../ports/mpeg2dec/include
 CC = gcc
 
 PROJECT = libsvgagui.a

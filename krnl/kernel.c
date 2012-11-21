@@ -266,3 +266,5 @@ void k_main(multiboot_info_t *boot_info)
 		ProcessCreate(tcpip_mainloop, "INET");
 	}*/
 };
+
+void __chkstk() {}

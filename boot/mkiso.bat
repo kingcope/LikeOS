@@ -1,5 +1,3 @@
-cd F:\UBUNTUBACKUP-OPT\LikeNew\Like\src\src\boot
-
 del like.iso
 
 copy ..\build\kernel.bin kernel.bin

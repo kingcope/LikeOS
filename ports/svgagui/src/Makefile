@@ -11,7 +11,6 @@ libsvgagui.a: $(OBJS)
 	rm -f libsvgagui.a
 	ar cq libsvgagui.a $(OBJS)
 	ranlib libsvgagui.a
-	cp libsvgagui.a ..
 
 $(OBJS) : ../svgagui.h local.h
 text.o : font.h

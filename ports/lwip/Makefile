@@ -1,7 +1,7 @@
 LWIPDIR=src
 INCLUDES=-I../../include -Iproj/unixsim -I$(LWIPDIR)/arch/paulos/include -I$(LWIPDIR)/include -I$(LWIPDIR)/include/ipv4 -I../../lib/unix/include/unix -Iapps -I.
 CDEFS=-DIPv4 -DNO_THREADS -DIP_FORWARDING -DBIND_CHECK -DHAVE_MAGIC -DHAVE_ETH
-CFLAGS=-O2 -nostdlib -nodefaultlibs -nostdinc -fno-builtin -static -fno-rtti -ffreestanding -fno-exceptions -Wall -Wl,-L../../lib/ -D__PAULOS__
+CFLAGS=-O2 -nostdlib -nodefaultlibs -nostdinc -fno-builtin -static -fno-rtti -ffreestanding -fno-exceptions -Wall -Wl,-L../../lib/unix -D__PAULOS__ -lunix
 
 IPV4=$(LWIPDIR)/sequencer.c $(LWIPDIR)/core/ipv4/icmp.c $(LWIPDIR)/core/ipv4/ip.c	\
 	$(LWIPDIR)/core/inet.c $(LWIPDIR)/core/ipv4/ip_addr.c	\
@@ -46,5 +46,5 @@ $(LIB): $(ACOBJECTS)
 	ranlib $(LIB)
 
 .c.o:
-	$(CC) $(INCLUDES) $(CDEFS) $(CFLAGS) -o $(<:.c=.o) -c $< -lunix
+	$(CC) $(INCLUDES) $(CDEFS) $(CFLAGS) -o $(<:.c=.o) -c $<
 

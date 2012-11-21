@@ -50,7 +50,3 @@ spoon:
 	gcc $(HEADERPATH) -I./os/$@/ $(CFLAGS) *.c support/*.c sys/*.c ./os/$@/*.c -c
 	#gcc -D__x86__ $(HEADERPATH) -I./os/$@/ $(CFLAGS) *.c sys/*.c ./os/$@/*.c -c
 	ar -rc libunix.a  *.o
-
-
-
-

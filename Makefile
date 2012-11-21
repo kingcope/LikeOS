@@ -19,7 +19,7 @@ CPPFLAGS=-O2 -nostdlib -nodefaultlibs -nostdinc \
 	-Ilib/unix/include/unix/ -Wl,-Llib/ -Lports/svgagui/
 	
 #LDFLAGS=-Werror -T like.ld -static -Llib/ -Lports/lwip/ -Lports/svgagui/ -Lports/mpeg2dec -llwip -lsvgagui -lunix -lmpeg2 -lmpeg2convert
-LDFLAGS=-T like.ld -static -Llib/ -Lports/lwip/ -Lports/svgagui/ -Lports/mpeg2dec -lsvgagui -llwip -lunix -lmpeg2  -lmpeg2convert
+LDFLAGS=-T like.ld -static -Llib/ -Llib/unix/ -Lports/lwip/ -Lports/svgagui/src/ -Lports/mpeg2dec -lsvgagui -lunix -lmpeg2  -lmpeg2convert -llwip
 
 CC=gcc
 
@@ -51,8 +51,6 @@ OBJS=krnl/kernel.o krnl/paging.o krnl/physalloc.o \
 	
 LD=ld
 
-MKISO=c:/LikeOS/src/boot/mkiso.bat
-
 ASSEMBLER=./nasm.exe
 
 all:	kernel
@@ -61,16 +59,24 @@ $(SRCS):
 # To make an object from source
 		$(CC) $(CFLAGS) -c $*.c
 
-kernel: $(OBJS)
+kernel: libunix.a libsvgagui.a liblwip.a $(OBJS)
 		$(ASSEMBLER) -f elf krnl/kernel_start.asm -o build/ks.o		
 		$(LD) -o build/$@.bin build/ks.o $(OBJS) $(LDFLAGS)
 		$(MKISO)
 #		rm $(OBJS)
 #		rm build/ks.o
-		
+libunix.a:
+		cd lib; cd unix; make LikeOS
+liblwip.a:
+		cd ports; cd lwip; make
+libsvgagui.a:
+		cd ports; cd svgagui; make
 # To install things in the right place
 install: kernel
-		$(MKISO)
-clean: $(OBJS)
-		rm build/ks.o
+		cd boot; ./mkiso.bat
+clean:
+		cd lib;cd unix; rm *.o; rm libunix.a
+		cd ports; cd svgagui; cd src/; rm *.o; rm libsvgagui.a
+		cd ports; cd lwip; rm liblwip.a; make clean
 		rm $(OBJS)
+		rm build/ks.o

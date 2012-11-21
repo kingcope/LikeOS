@@ -573,7 +573,9 @@ tcp_listen(struct tcp_pcb *pcb)
 #endif /* LWIP_CALLBACK_API */
   lpcb->state = LISTEN;
 
-  TCP_REG((struct tcp_pcb **)&tcp_listen_pcbs, (struct tcp_pcb *)lpcb);
+  
+  // COMPILE ERROR XXX nr
+  //TCP_REG((struct tcp_pcb **)&tcp_listen_pcbs, (struct tcp_pcb *)lpcb);
   return (struct tcp_pcb *)lpcb;
 }
 /*-----------------------------------------------------------------------------------*/
